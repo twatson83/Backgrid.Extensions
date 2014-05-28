@@ -1,0 +1,14 @@
+{
+  "name": "Backgrid.Extensions",
+  "version": "0.0.1",
+  "author": "Tim Watson",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "matchdep": "*",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jst": "~0.5.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-jsbeautifier": "^0.2.6",
+    "grunt-contrib-watch": "^0.6.0"
+  }
+}

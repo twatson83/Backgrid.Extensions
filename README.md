@@ -1,7 +1,7 @@
 Backgrid.Extensions
 ====================
 
-# Adding a class name to a table column
+## Adding a class name to a table column
 
 ```javascript
 
@@ -15,7 +15,7 @@ columns: [
 
 ```
 
-# HTML Cell
+## HTML Cell
 
 ```javascript
 
@@ -35,7 +35,7 @@ columns: [
 
 ```
 
-# Dropdown Cell
+## Dropdown Cell
 
 ```javascript
 

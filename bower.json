@@ -1,0 +1,26 @@
+{
+  "name": "Backgrid.Extensions",
+  "version": "0.0.0",
+  "homepage": "https://github.com/twatson83/Backgrid.Extensions",
+  "authors": [
+    "twatson83 <tswatson123@gmail.com>"
+  ],
+  "description": "A few Backgrid extensions that I find useful",
+  "main": "lib/Backgrid.Extensions.js",
+  "keywords": [
+    "Backgrid",
+    "extensions",
+    "Backgrid.Extensions",
+    "grid",
+    "backbone",
+    "table"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

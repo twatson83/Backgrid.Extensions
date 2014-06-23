@@ -7,6 +7,13 @@
         if (className) this.$el.addClass(className);
     };
 
+    Backgrid.headerCell_initialize_original = Backgrid.HeaderCell.prototype.initialize;
+    Backgrid.HeaderCell.prototype.initialize = function () {
+        Backgrid.headerCell_initialize_original.apply(this, arguments);
+        var className = this.column.get('headerClassName');
+        if (className) this.$el.addClass(className);
+    };
+
     Backgrid.HtmlCell = Backgrid.Cell.extend({
         className: "html-cell",
         render: function() {
@@ -42,6 +49,6 @@
                 this.currentEditor.remove.apply(this.currentEditor, arguments);
                 delete this.currentEditor;
             }
-            return Cell.__super__.remove.apply(this, arguments);
+            return Backgrid.Cell.__super__.remove.apply(this, arguments);
         }
     });

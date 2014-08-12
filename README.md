@@ -15,6 +15,25 @@ columns: [
 
 ```
 
+### Cell handler function
+
+```javascript
+
+columns: [
+    {        
+        name: 'name',
+        cell: 'string',
+        handler: function (model, cell) {
+            var highlight = model.get("highlight");
+            if (highlight) {
+                cell.addClass("HighlightCell");
+            }
+        }
+    }
+]
+
+```
+
 ### HTML Cell
 
 ```javascript

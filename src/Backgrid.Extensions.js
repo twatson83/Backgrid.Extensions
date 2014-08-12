@@ -5,10 +5,13 @@
         Backgrid.cell_initialize_original.apply(this, arguments);
         var className = this.column.get('className');
         if (className) this.$el.addClass(className);
+        if (this.column.attributes.handler) {
+            this.column.attributes.handler(this.model, this.$el);
+        }
     };
 
     Backgrid.headerCell_initialize_original = Backgrid.HeaderCell.prototype.initialize;
-    Backgrid.HeaderCell.prototype.initialize = function () {
+    Backgrid.HeaderCell.prototype.initialize = function() {
         Backgrid.headerCell_initialize_original.apply(this, arguments);
         var className = this.column.get('headerClassName');
         if (className) this.$el.addClass(className);
